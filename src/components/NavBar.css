@@ -1,0 +1,104 @@
+/* Navbar.css */
+
+/* Customize Navbar background color */
+.custom-navbar {
+  background: linear-gradient(135deg, #E2725B 0%, #660033 100%);
+}
+
+/* Navbar Brand styling */
+.custom-navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 1.75rem;
+  font-family: "Open Sans", sans-serif;
+  color: #660033;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .navbar-brand:hover,
+.custom-navbar .navbar-brand:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Nav buttons styling */
+.custom-navbar .nav-link.btn {
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  padding: 8px 20px;
+  color: #e0e7ff;
+  border-color: #E2725B;
+  transition: all 0.3s ease;
+  margin-left: 8px;
+}
+
+.custom-navbar .nav-link.btn:hover,
+.custom-navbar .nav-link.btn:focus {
+  background: #E2725B;
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(255, 153, 0, 0.6);
+  text-decoration: none;
+}
+
+/* Navbar toggler button Style */
+/* Hide the default toggler icon */
+.custom-navbar .navbar-toggler-icon {
+  display: none;
+}
+/* Add custom icon using a background image or SVG */
+.custom-navbar .navbar-toggler {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* Custom hamburger icon using CSS */
+.custom-navbar .navbar-toggler::before,
+.custom-navbar .navbar-toggler::after,
+.custom-navbar .navbar-toggler div {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  height: 3px;
+  background-color: #E2725B;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.custom-navbar .navbar-toggler::before {
+  top: 10px;
+}
+.custom-navbar .navbar-toggler div {
+  top: 18px;
+}
+.custom-navbar .navbar-toggler::after {
+  top: 26px;
+}
+/* Optional: animate toggler icon when active (collapsed menu open) */
+.custom-navbar .navbar-toggler.collapsed::before {
+  top: 10px;
+  transform: rotate(0);
+}
+.custom-navbar .navbar-toggler.collapsed div {
+  top: 18px;
+  opacity: 1;
+}
+.custom-navbar .navbar-toggler.collapsed::after {
+  top: 26px;
+  transform: rotate(0);
+}
+.custom-navbar .navbar-toggler:not(.collapsed)::before {
+  top: 18px;
+  transform: rotate(45deg);
+}
+.custom-navbar .navbar-toggler:not(.collapsed) div {
+  opacity: 0;
+}
+.custom-navbar .navbar-toggler:not(.collapsed)::after {
+  top: 18px;
+  transform: rotate(-45deg);
+}

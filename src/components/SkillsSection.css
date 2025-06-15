@@ -1,0 +1,64 @@
+.skills-section {
+  padding: 64px 0;
+  background: linear-gradient(135deg, #660033 0%, #E2725B 100%);
+  color: #111827;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.skill-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none;
+}
+
+.circle-svg {
+  transform: rotate(-90deg);
+  overflow: visible;
+}
+
+.progress-ring-circle {
+  transition: stroke-dashoffset 1.5s ease;
+}
+
+.progress-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  fill: #ffffff;
+  transform: rotate(90deg); /* To counter the svg rotation */
+  font-family: 'Poppins', sans-serif;
+}
+
+.skill-label {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .skills-grid {
+    gap: 24px;
+  }
+}
+

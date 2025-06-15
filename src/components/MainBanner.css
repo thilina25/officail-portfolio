@@ -1,0 +1,98 @@
+/* MainBanner.css */
+
+.main-banner {
+  background: linear-gradient(135deg, #660033 0%, #E2725B 100%);
+  color: white;
+  padding: 96px 0;
+  display: flex;
+  align-items: center;
+  min-height: 75vh;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #d1d5db;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  line-height: 1.1;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.wrap {
+  color: #E2725B; /* Highlight color for the rotating text */
+}
+
+p {
+  font-size: 1.25rem;
+  color: #d1d5db;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  max-width: 480px;
+  line-height: 1.6;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  font-weight: 700;
+  padding: 14px 36px;
+  border-radius: 50px;
+  background-color: #660033;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:hover,
+button:focus {
+  background-color: #E2725B;
+  box-shadow: 0 12px 36px rgba(255, 153, 0, 0.6);
+}
+
+/* Animation for floating effect */
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.main-banner img {
+  max-width: 100%;
+ /* border-radius: 24px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
+  object-fit: contain; */
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-banner {
+    padding: 64px 16px;
+    min-height: auto;
+  }
+  h1 {
+    font-size: 2.25rem;
+  }
+  p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  button {
+    width: 100%;
+    padding: 16px 0;
+  }
+}
