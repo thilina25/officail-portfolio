@@ -1,6 +1,13 @@
 import { NavBar } from './components/NavBar';
 import { MainBanner } from './components/MainBanner'; 
 import { SkillsSection } from './components/SkillsSection';
+import { ProjectSection } from './components/ProjectSection';
+import { EducationSection } from './components/EducationSection';
+import { CertificatesSection } from './components/CertificateSection';
+import { ContactSection } from './components/ContactSection';
+import { AboutMeSection } from './components/AboutMeSection';
+import { FooterSection } from './components/FooterSection';
+import React from 'react';
 import './App.css';
 
 function App() {
@@ -9,11 +16,12 @@ function App() {
       <NavBar />
       <MainBanner />
       <SkillsSection />
-      {/* Add other sections like Projects, Education, Contact, etc. */}
-      <section id="projects">
-        <h2>Projects</h2>
-        {/* Add your projects here */}
-      </section>
+      <ProjectSection />
+      <EducationSection />
+      <CertificatesSection />
+      <AboutMeSection />
+      <ContactSection />
+      <FooterSection />
     </div>
   );
 }

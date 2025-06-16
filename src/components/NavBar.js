@@ -14,7 +14,7 @@ export const NavBar = () => {
             <Navbar.Toggle aria-controls="navbar-nav" />
             <Navbar.Collapse id="navbar-nav">
             <Nav className="ms-auto align-items-center">
-                <Nav.Link href="#profile" as={Button} variant="outline-light" className="me-2">
+                <Nav.Link href="#home" as={Button} variant="outline-light" className="me-2">
                 Profile
                 </Nav.Link>
                 <Nav.Link href="#skills" as={Button} variant="outline-light" className="me-2">
@@ -26,11 +26,14 @@ export const NavBar = () => {
                 <Nav.Link href="#education" as={Button} variant="outline-light" className="me-2">
                 Education
                 </Nav.Link>
-                <Nav.Link href="#contact" as={Button} variant="outline-light" className="me-2">
-                Contact
+                <Nav.Link href="#certificates" as={Button} variant="outline-light" className="me-2">
+                Certificate
                 </Nav.Link>
-                <Nav.Link href="#resume" as={Button} variant="outline-light" className="me-2">
+                <Nav.Link href="#about" as={Button} variant="outline-light" className="me-2">
                 About Me
+                </Nav.Link>
+                <Nav.Link href="#contact" as={Button} variant="outline-light" className="me-2">
+                Contact Me
                 </Nav.Link>
             </Nav>
             </Navbar.Collapse>

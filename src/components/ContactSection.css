@@ -1,0 +1,108 @@
+.contact-section {
+  background: linear-gradient(270deg, #660033, #ef5c3e, #8f1800);
+  background-size: 800% 800%;
+  animation: gradientShift 6s ease infinite;
+  color: white;
+  padding: 64px 0;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s ease;
+}
+
+/* Gradient animation keyframes */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #E2725B;
+}
+
+.contact-description {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #d1d5db;
+}
+
+.contact-form {
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: box-shadow 0.3s ease;
+  
+}
+
+.form-control {
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 12px 16px;
+  border: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 8px 2px #ffffff;
+  border: none;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.btn-submit {
+  background-color: #ef5c3e;
+  border: none;
+  color: white;
+  font-size: 1.125rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"] {
+  border-radius: 10px;
+  padding: 14px 36px;
+  font-weight: 700;
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #660033;
+  box-shadow: 0 12px 36px rgba(255, 43, 43, 0.4);
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .contact-description {
+    font-size: 1rem;
+  }
+}

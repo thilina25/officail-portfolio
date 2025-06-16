@@ -1,0 +1,88 @@
+.education-section {
+  padding: 64px 0;
+  background: linear-gradient(135deg, #660033 0%, #E2725B 100%);
+  color: #111827;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+
+.section-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  text-align: center;
+  color: #E2725B;
+  letter-spacing: 4px;
+}
+
+.education-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.education-item {
+  background: #E2725B;
+  padding: 24px 32px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(255, 153, 0, 0.6);
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.education-item:focus,
+.education-item:hover {
+  box-shadow: 0 12px 36px rgba(255, 0, 0, 0.3);
+  outline: none;
+}
+
+.education-institution {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #660033;
+}
+
+.education-degree {
+  font-weight: 600;
+  color: #cdcdcd;
+  margin-bottom: 8px;
+  font-size: 1.125rem;
+}
+
+.education-period {
+  font-style: italic;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.education-description {
+  color: #374151;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .education-list {
+    padding: 0 16px;
+  }
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 32px;
+  }
+  .education-item {
+    padding: 20px 24px;
+  }
+  .education-institution {
+    font-size: 1.25rem;
+  }
+  .education-degree {
+    font-size: 1rem;
+  }
+}

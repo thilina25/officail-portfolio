@@ -1,0 +1,47 @@
+.aboutme-section {
+  background: linear-gradient(135deg, #660033 0%, #E2725B 100%);
+  color: #1e293b;
+  padding: 64px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 48px;
+  text-align: center;
+  color: #E2725B;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 280px;
+  border: 8px solid #7c3aed;
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.profile-image:hover,
+.profile-image:focus {
+  box-shadow: 0 12px 36px rgba(124, 58, 237, 0.3);
+  outline: none;
+}
+
+.aboutme-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .aboutme-text {
+    font-size: 1.125rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,133 @@
+/* ProjectSection.css */
+.project-section {
+  padding: 64px 0;
+  background: linear-gradient(135deg, #660033 0%, #E2725B 100%);
+  font-family: 'Poppins', sans-serif;
+  color: #1e293b;
+}
+
+.section-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 56px;
+  color: #E2725B;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.projects-grid {
+  gap: 40px;
+  justify-content: center;
+}
+
+.project-card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background: #E2725B;
+  box-shadow: 0 12px 24px rgba(255, 153, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 48px rgba(255, 153, 0, 0.35);
+  outline: none;
+}
+
+.project-image {
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid #660033;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  height: 100%;
+}
+
+.card-title {
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #660033;
+}
+
+.card-text {
+  flex-grow: 1;
+  color: #4b5563;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
+    justify-content: center;
+}
+
+.project-links .btn-primary {
+  background: #660033;
+  border-color: #660033;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-links .btn-primary:hover,
+.project-links .btn-primary:focus {
+  background-color: #660033;
+  box-shadow: 0 8px 24px rgba(255, 153, 0, 0.35);
+}
+
+.project-links .btn-outline-primary {
+  color: #660033;
+  border-color: #660033;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease,color 0.3s ease;
+}
+
+.project-links .btn-outline-primary:hover,
+.project-links .btn-outline-primary:focus {
+  background-color: #660033;
+  color: white;
+  border-color: #660033;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  .project-card {
+    height: auto;
+  }
+  .project-image {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    gap: 24px;
+  }
+}
+
