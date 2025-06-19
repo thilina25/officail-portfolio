@@ -27,7 +27,7 @@
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   padding: 8px 20px;
-  color: #e0e7ff;
+  color: #E2725B;
   border-color: #E2725B;
   transition: all 0.3s ease;
   margin-left: 8px;
@@ -36,7 +36,7 @@
 .custom-navbar .nav-link.btn:hover,
 .custom-navbar .nav-link.btn:focus {
   background: #E2725B;
-  color: white;
+  color: rgb(0, 0, 0);
   border-color: transparent;
   box-shadow: 0 4px 12px rgba(255, 153, 0, 0.6);
   text-decoration: none;
